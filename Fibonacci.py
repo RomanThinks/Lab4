@@ -6,9 +6,8 @@
 # e.) Fibonnaci sums
 
 counter = 0
-counter1 = 0
-counter2 = 1
 fibon = 0
+prevFibon = 1
 
 print('input number to give fibonacci sum:')
 
@@ -20,11 +19,15 @@ userNumber = int(string)
 
 while counter != userNumber+1:
     #counter starts at zero
-    fibon = counter1 + counter2
-    counter1 = counter1 + 1
-    counter2 = counter2 + 1
+    
+    fibon = fibon + prevFibon
+    
+    prevFibon = prevFibon + fibon
+    
+    print(fibon)
+    
     
     counter = counter + 1
 
-print(fibon)
+#print(fibon)
     
