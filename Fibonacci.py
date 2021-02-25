@@ -15,19 +15,23 @@ string = input()
 
 userNumber = int(string)
 
+if userNumber == 0:
+    print('0')
+
 #begin summing the fibonnaci, the sum of previous to the next sum
 
-while counter != userNumber+1:
-    #counter starts at zero
+else:
+    while counter != userNumber+1:
+        #counter starts at zero
     
-    fibon = fibon + prevFibon
+        fibon = fibon + prevFibon
     
-    prevFibon = prevFibon + fibon
+        prevFibon = prevFibon + fibon
+        
+        print(fibon)
     
-    print(fibon)
     
-    
-    counter = counter + 1
+        counter = counter + 1
 
-#print(fibon)
+    #print(fibon)
     
