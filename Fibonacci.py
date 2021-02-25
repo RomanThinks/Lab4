@@ -11,8 +11,8 @@ counter = 0
 fibon = 0
 prevFibon = 1
 
-showP = 1     #showP = show prevFibon
-showF = 0     #showF = show fibon
+showP = True     #showP = show prevFibon
+showF = False     #showF = show fibon
 
 print('input number to give fibonacci sum:')
 
@@ -20,28 +20,32 @@ string = input()
 
 userNumber = int(string)
 
-if userNumber == 0:
+if userNumber == 0:         #nothing to add
     print('0')
 
 #begin summing the fibonnaci, the sum of previous to the next sum
 
 else:
     while counter != userNumber:
+
+        showP = not(showP)  #interchanging which sum is done
+        showF = not(showF)
+
+        if showP:
+            fibon = fibon + prevFibon   #the first sum
+            #print('fibon = ', fibon)
+
+        else:
+            if showF:
+                prevFibon = prevFibon + fibon   #adding from previous
+                #print('prevfibon = ', prevFibon)
+
+        counter = counter + 1
+        #print('iteration///////////////')  #used to visualize iteration of while loop
         
-        fibon = fibon + prevFibon
-        prevFibon = prevFibon + fibon
-        
-        print('prevFibon = ', prevFibon)
-        print('fibon = ', fibon)
-        
-        showP = ~showP
-        showF = ~showF
-        
-        if showP == 1:
-            print(prevFibon)
-            counter = counter + 1
-            
-        if showF == 1:
-            print(fibon)
-            counter = counter + 1
+if showP:
+    print('Fibonacci value = ', fibon) #gives previous fibon
+
+if showF:
+    print('Fibonacci value = ', prevFibon) #gives newer fibon added from fibon
 
