@@ -1,3 +1,9 @@
+# Joshua DeLosSantos, Roman Rodriguez, Arturo Verdugo
+# Team Saber
+# CSE 5408
+# Spring 2021
+# Lab 4
+# b.) check inputted # is prime
 
 num = int(input("Enter a number you want to check: "))
 

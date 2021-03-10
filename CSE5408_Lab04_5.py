@@ -1,3 +1,10 @@
+# Arturo Verdugo, Joshua DeLosSantos, Roman Rodriguez
+# Team Saber
+# CSE 5408
+# Spring 2021
+# Lab 4
+# e.) good password or not
+
 import time
 username = input("Please enter the desired username")
 i = 0

@@ -1,3 +1,10 @@
+# Joshua DeLosSantos, Roman Rodriguez, Arturo Verdugo
+# Team Saber
+# CSE 5408
+# Spring 2021
+# Lab 4
+# c.) convert time to military time
+
 def regtoMil(usrin):
 
     if len(tim2mil) != 7:
